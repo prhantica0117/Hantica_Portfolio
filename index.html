@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Paul Ryje Hantica is a third-year BSIT student at Consolatrix College of Toledo City, Inc., building web and mobile projects with TypeScript, PHP, and Django.">
+  <meta name="author" content="Paul Ryje Hantica">
+  <meta name="theme-color" content="#0a0f1d">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Paul Ryje Hantica — BSIT Student &amp; Web Developer">
+  <meta property="og:description" content="Student developer from Toledo City, Cebu, building practical web and mobile projects while learning in public.">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Paul Ryje Hantica — BSIT Student &amp; Web Developer</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%233b82f6'/%3E%3Cstop offset='1' stop-color='%238b5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%230a0f1d'/%3E%3Ctext x='32' y='42' font-family='Arial, sans-serif' font-size='22' font-weight='700' fill='url(%23g)' text-anchor='middle'%3EPRH%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="scroll-progress" aria-hidden="true">
+    <span id="scroll-progress-bar"></span>
+  </div>
+
+  <div class="ambient" aria-hidden="true">
+    <span class="blob blob--blue"></span>
+    <span class="blob blob--purple"></span>
+    <span class="blob blob--pink"></span>
+    <span class="ambient-grid"></span>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Paul Ryje Hantica home">
+        <span class="brand-mark" data-site-initials>PRH</span>
+        <span class="brand-text" data-site-name>Paul Ryje Hantica</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <ul class="nav-links" id="nav-links"></ul>
+        <a class="nav-cta" href="#contact">
+          <span>Let's talk</span>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M7 17 17 7"></path>
+            <path d="M7 7h10v10"></path>
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span id="hero-eyebrow-text"></span>
+          </p>
+
+          <h1 class="hero-title" id="hero-title">
+            <span id="hero-headline-lead"></span>
+            <span class="gradient-text" id="hero-headline-accent"></span>
+          </h1>
+
+          <p class="hero-lede" id="hero-description"></p>
+
+          <div class="hero-actions">
+            <a class="btn btn--primary" id="hero-primary" href="#projects">
+              <span id="hero-primary-label">View my projects</span>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14"></path>
+                <path d="m13 6 6 6-6 6"></path>
+              </svg>
+            </a>
+            <a class="btn btn--ghost" id="hero-secondary" href="#contact">
+              <span id="hero-secondary-label">Let's connect</span>
+            </a>
+          </div>
+
+          <dl class="hero-stats" id="hero-stats"></dl>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-orbit hero-orbit--outer"></div>
+          <div class="hero-orbit hero-orbit--inner"></div>
+          <div class="glass hero-card" id="hero-card" data-tilt data-tilt-strength="7"></div>
+          <div class="floating-badges" id="hero-badges"></div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to the about section">
+        <span>Scroll to explore</span>
+        <span class="scroll-cue__line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <div class="section-heading__main">
+            <span class="section-label"><span class="section-marker"></span>01 — About</span>
+            <h2 id="about-title">Still learning. Always building.</h2>
+          </div>
+          <p class="section-intro" id="about-intro"></p>
+        </div>
+
+        <div class="about-grid">
+          <article class="glass about-panel" data-reveal style="--reveal-delay: 80ms">
+            <p class="about-lead" id="about-lead"></p>
+            <div class="about-copy" id="about-paragraphs"></div>
+            <ul class="about-highlights" id="about-highlights"></ul>
+          </article>
+
+          <div class="about-side">
+            <blockquote class="glass about-quote" data-reveal style="--reveal-delay: 160ms">
+              <p id="about-quote"></p>
+              <footer>— <span id="about-quote-author"></span></footer>
+            </blockquote>
+
+            <div class="glass skills-panel" data-reveal style="--reveal-delay: 220ms">
+              <div class="skills-panel__header">
+                <h3>Toolkit</h3>
+                <span id="skills-count"></span>
+              </div>
+              <div class="skill-badges" id="skill-badges"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <div class="section-heading__main">
+            <span class="section-label"><span class="section-marker"></span>02 — Selected work</span>
+            <h2 id="projects-title">Selected work, built while learning.</h2>
+          </div>
+          <p class="section-intro" id="projects-intro"></p>
+        </div>
+
+        <div class="project-grid" id="project-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-copy" data-reveal>
+          <span class="section-label"><span class="section-marker"></span>03 — Contact</span>
+          <h2 id="contact-title">Let's build something real together.</h2>
+          <p class="contact-intro" id="contact-intro"></p>
+
+          <a class="contact-email" id="contact-email" href="mailto:prhantica0117@gmail.com">
+            <span id="contact-email-text"></span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M7 17 17 7"></path>
+              <path d="M7 7h10v10"></path>
+            </svg>
+          </a>
+
+          <p class="contact-note">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span id="contact-availability"></span>
+          </p>
+
+          <div class="social-links" id="social-links"></div>
+        </div>
+
+        <form class="glass contact-form" id="contact-form" novalidate data-reveal style="--reveal-delay: 120ms">
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required aria-describedby="name-error">
+              <span class="form-error" id="name-error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="email-error">
+              <span class="form-error" id="email-error" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="project-type">What's this about?</label>
+            <select id="project-type" name="projectType"></select>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about the internship, project, or collaboration." required aria-describedby="message-error"></textarea>
+            <span class="form-error" id="message-error" aria-live="polite"></span>
+          </div>
+
+          <button class="btn btn--primary btn--full" id="form-submit" type="submit">
+            <span id="form-submit-label">Send message</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m5 12 4 4L19 6"></path>
+            </svg>
+          </button>
+
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          <p class="form-note">Your details stay private. No newsletters, ever.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="footer-brand" href="#home">
+        <span class="footer-mark" data-site-initials>PRH</span>
+        <span data-site-name>Paul Ryje Hantica</span>
+      </a>
+      <p>&copy; <span id="current-year"></span> <span data-site-name>Paul Ryje Hantica</span>. Crafted with intent.</p>
+      <a class="back-to-top" href="#home">
+        <span>Back to top</span>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 19V5"></path>
+          <path d="m5 12 7-7 7 7"></path>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
